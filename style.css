@@ -1,0 +1,153 @@
+:root {
+    --dark-wine: #721817ff;
+    --spring-green: #3eff8bff;
+    --ink-black: #001524ff;
+}
+
+body {
+    background-color: var(--ink-black);
+    color: var(--spring-green);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu {
+    background-color: var(--dark-wine);
+    overflow: hidden;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-family: 'Trade Winds', cursive;
+}
+
+
+.contenido {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulo {
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Trade Winds', cursive;
+    color: #cc0000;
+}
+
+.bloque-pareja-portada {
+    overflow: hidden;
+    margin-bottom: 40px;
+    background: #1c2a35;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.portada {
+    width: 45%;
+    float: left;
+    border-radius: 10px;
+    margin-right: 5%;
+}
+
+.descripcion {
+    width: 50%;
+    float: left;
+}
+
+
+.contenedor-grid {
+    overflow: hidden;
+}
+
+.bloque-pareja {
+    float: left;
+    width: 48%;
+
+    margin: 1%;
+    background: #1c2a35;
+    padding: 20px;
+    border-radius: 15px;
+    min-height: 500px;
+
+}
+
+
+.bloque-pareja h3 {
+    font-family: 'Trade Winds', cursive;
+    margin-top: 0;
+}
+
+.imagen-seccion {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: block;
+}
+
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 40px;
+    border-top: 2px solid var(--dark-wine);
+    margin-top: 40px;
+}
+
+
+.myicono {
+    color: white;
+    font-size: 1.5em;
+    padding: 15px;
+    display: none;
+    /* Oculto en escritorio por defecto */
+    text-align: right;
+    cursor: pointer;
+}
+
+.lista-sm a.active {
+    background-color: #cc0000;
+    color: white !important;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .myicono {
+        display: block !important;
+        text-align: right;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+
+    .lista-sm {
+        display: none;
+        width: 100%;
+        background-color: var(--dark-wine);
+    }
+
+
+    .menu li {
+        float: none !important;
+        display: block;
+        width: 100%;
+    }
+}
